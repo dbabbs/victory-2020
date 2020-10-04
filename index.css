@@ -50,7 +50,7 @@ body {
 
 .bottom {
    padding: 20px;
-   background: var(--off-white);
+   background: var(--joe-navy);
 
    display: flex;
    justify-content: space-between;
@@ -58,16 +58,16 @@ body {
 }
 
 .left .subtitle {
-   color: var(--true-red);
+   color: var(--delaware-bay-blue);
    font-weight: 700;
    font-size: 20px;
    margin-bottom: 5px;
 }
 
 .left .title {
-   color: var(--union-blue);
+   color: white;
    font-weight: 600;
-   font-size: 36px;
+   font-size: 32px;
 }
 
 .right img {
@@ -139,6 +139,7 @@ body {
    color: white;
    font-size: 16px;
    font-weight: 600;
+   margin-bottom: 3px;
 }
 
 .tooltip-subtitle {

@@ -2,7 +2,7 @@ mapboxgl.accessToken =
    'pk.eyJ1IjoiYmFiYnMiLCJhIjoiY2s1b2JoMjZvMGYydzNmbXAxMXp1NWZhZyJ9.LEHmtAFLAij67eF-54FjxA';
 const map = new mapboxgl.Map({
    container: document.querySelector('.map'),
-   style: 'mapbox://styles/mapbox/light-v9',
+   style: 'mapbox://styles/babbs/ckfvm0tt72zar19quhbna5s0k',
    center: { lng: -75.14334634174082, lat: 39.97959516782947 },
    zoom: 12,
 });
