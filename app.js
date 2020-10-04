@@ -5,6 +5,7 @@ const map = new mapboxgl.Map({
    style: 'mapbox://styles/babbs/ckfvm0tt72zar19quhbna5s0k',
    center: { lng: -75.14587642289808, lat: 39.96865460678771 },
    zoom: 12,
+   interactive: false,
 });
 
 (async () => {
