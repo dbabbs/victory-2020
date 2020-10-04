@@ -82,7 +82,7 @@ body {
 }
 
 .outer-marker {
-   background: rgba(39, 85, 162, 0.3);
+   background: #3a69f7;
    width: 50px;
    height: 50px;
    border-radius: 50%;
@@ -98,7 +98,7 @@ body {
 @keyframes ping {
    0% {
       transform: scale(0.3);
-      opacity: 1;
+      opacity: 0.5;
    }
    75% {
       /* opacity: 1; */
@@ -110,28 +110,27 @@ body {
 }
 
 .inner-marker {
-   width: 20px;
-   height: 20px;
-   background: rgba(39, 85, 162, 1);
+   width: 18px;
+   height: 18px;
+   background: #3a69f7;
    opacity: 1;
    border-radius: 50%;
    position: absolute;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   border: 3px solid white;
+   box-sizing: border-box;
 }
 
 .tooltip {
    background: var(--joe-navy);
-   border-radius: 3px;
+   border-radius: 5px;
    width: 220px;
-   /* height: 40px; */
-   /* width: 120px; */
-
    position: absolute;
-   top: 20px;
-   left: 20px;
-   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   top: 18px;
+   left: 18px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
    padding: 8px 12px;
-   /* transform: translate(15px, 15px); */
+
    font-family: 'Open Sans';
 }
 
@@ -145,4 +144,16 @@ body {
 .tooltip-subtitle {
    color: var(--delaware-bay-blue);
    font-size: 14px;
+}
+
+.tooltip {
+   background: white;
+}
+
+.tooltip-title {
+   color: var(--joe-navy);
+}
+
+.tooltip-subtitle {
+   color: var(--delaware-bay-blue);
 }
