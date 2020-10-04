@@ -1,0 +1,32 @@
+[
+   {
+      "region": "Center City",
+      "name": "City Hall Room 140",
+      "address": "1400 John F Kennedy Blvd",
+      "zip": "19107",
+      "position": [
+         -75.163353,
+         39.95319
+      ]
+   },
+   {
+      "region": "North",
+      "name": "The Liacouras Center",
+      "address": "1776 N Broad St",
+      "zip": "19121",
+      "position": [
+         -75.157661,
+         39.980015
+      ]
+   },
+   {
+      "region": "Upper North",
+      "name": "Julia De Burgos Elementary",
+      "address": "401 W Lehigh Ave",
+      "zip": "19133",
+      "position": [
+         -75.138618,
+         39.992748
+      ]
+   }
+]
