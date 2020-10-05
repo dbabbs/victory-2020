@@ -1,6 +1,7 @@
 [
    {
-      "region": "Center City",
+      "region": "Center City & West Philadelphia",
+      "region_id": "center-west",
       "name": "City Hall Room 140",
       "address": "1400 John F Kennedy Blvd",
       "zip": "19107",
@@ -10,7 +11,31 @@
       ]
    },
    {
-      "region": "North",
+      "region": "Center City & West Philadelphia",
+      "region_id": "center-west",
+      "name": "Tilden Middle School",
+      "address": "6601 Elmwood Ave",
+      "zip": "19142",
+      "position": [
+         -75.232393,
+         39.921979
+      ]
+   },
+   {
+      "region": "Center City & West Philadelphia",
+      "region_id": "center-west",
+      "name": "Overbrook Elementary School",
+      "id": "overbrook",
+      "address": "2032 N. 62nd Street. ",
+      "zip": "19151",
+      "position": [
+         -75.245604,
+         39.981965
+      ]
+   },
+   {
+      "region": "North Philadelphia",
+      "region_id": "north",
       "name": "The Liacouras Center",
       "address": "1776 N Broad St",
       "zip": "19121",
@@ -20,13 +45,38 @@
       ]
    },
    {
-      "region": "Upper North",
+      "region": "North Philadelphia",
+      "region_id": "north",
       "name": "Julia De Burgos Elementary",
       "address": "401 W Lehigh Ave",
       "zip": "19133",
+      "id": "julia",
       "position": [
          -75.138618,
          39.992748
+      ]
+   },
+   {
+      "region": "North Philadelphia",
+      "region_id": "north",
+      "name": "Roxborough High School",
+      "id": "rox",
+      "address": "6498 Ridge. Ave",
+      "zip": "19128",
+      "position": [
+         -75.223108,
+         40.037280
+      ]
+   },
+   {
+      "region": "Far Northeast",
+      "region_id": "northeast",
+      "name": "George Washington High School",
+      "address": "10175 Bustleton Ave",
+      "zip": "19116",
+      "position": [
+         -75.025100,
+         40.105725
       ]
    }
 ]
