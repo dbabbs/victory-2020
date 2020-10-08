@@ -1,15 +1,15 @@
 const showcase = [
    {
-      position: { lng: -75.19070164438227, lat: 39.95330735782943 },
+      position: { lng: -75.18026271293837, lat: 39.950329748453754 },
       region_id: 'center-west',
       region: 'Center City & West Philadelphia',
-      zoom: 12,
+      zoom: 11.5,
    },
    {
       position: { lng: -75.16394864511551, lat: 40.00248519841409 },
       region_id: 'north',
       region: 'North Philadelphia',
-      zoom: 12,
+      zoom: 11.5,
    },
    {
       position: { lng: -75.0251, lat: 40.105725 },
@@ -18,13 +18,12 @@ const showcase = [
       zoom: 12,
    },
    {
-      position: { lng: -75.13348184939287, lat: 39.99435816307883 },
+      position: { lng: -75.18652953556779, lat: 39.995678480278286 },
       region_id: 'all',
       region: 'City Wide',
-      zoom: 10.276606498480344,
+      zoom: 10.467747697842189,
    },
 ];
-
 mapboxgl.accessToken =
    'pk.eyJ1IjoiYmFiYnMiLCJhIjoiY2s1b2JoMjZvMGYydzNmbXAxMXp1NWZhZyJ9.LEHmtAFLAij67eF-54FjxA';
 const map = new mapboxgl.Map({
@@ -66,7 +65,8 @@ const map = new mapboxgl.Map({
    });
 
    let i = 0;
-   const duration = 16000;
+   const duration = 30000 / 4;
+   // flyTo(showcase[3], 3);
    flyTo(showcase[i], i);
    setInterval(() => {
       i++;
@@ -90,10 +90,14 @@ const map = new mapboxgl.Map({
          console.log('final...');
 
          // lol:
-         document.getElementById('julia').style.top = -59 + -18 + 'px';
-         document.getElementById('rox').style.top = -59 + -18 + 'px';
 
-         document.getElementById('overbrook').style.left = -264 + -18 + 'px';
+         setTimeout(() => {
+            document.getElementById('julia').style.top = -59 + -18 + 'px';
+            document.getElementById('rox').style.top = -59 + -18 + 'px';
+
+            document.getElementById('overbrook').style.left = -264 + -18 + 'px';
+            document.getElementById('george').style.left = -264 + -18 + 'px';
+         }, 1000);
       }
       setTimeout(() => {
          nodes

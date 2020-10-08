@@ -72,6 +72,7 @@
       "region": "Far Northeast",
       "region_id": "northeast",
       "name": "George Washington High School",
+      "id": "george",
       "address": "10175 Bustleton Ave",
       "zip": "19116",
       "position": [
