@@ -21,7 +21,7 @@ const showcase = [
       position: { lng: -75.18652953556779, lat: 39.995678480278286 },
       region_id: 'all',
       region: 'City Wide',
-      zoom: 10.467747697842189,
+      zoom: 10.4,
    },
 ];
 mapboxgl.accessToken =
@@ -70,6 +70,10 @@ const map = new mapboxgl.Map({
    flyTo(showcase[i], i);
    setInterval(() => {
       i++;
+      if (i >= showcase.length) {
+         i = 0;
+      }
+      console.log(i);
 
       flyTo(showcase[i], i);
    }, duration);
