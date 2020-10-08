@@ -68,14 +68,15 @@ const map = new mapboxgl.Map({
    const duration = 30000 / 4;
    // flyTo(showcase[3], 3);
    flyTo(showcase[i], i);
-   setInterval(() => {
+   const interval = setInterval(() => {
       i++;
       if (i >= showcase.length) {
          i = 0;
+         clearInterval(interval);
+      } else {
+         flyTo(showcase[i], i);
       }
-      console.log(i);
-
-      flyTo(showcase[i], i);
+      // console.log(i);
    }, duration);
 
    function flyTo({ position, region_id, region, zoom }, i) {
