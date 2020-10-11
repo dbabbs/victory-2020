@@ -1,12 +1,12 @@
 const showcase = [
    {
-      position: { lng: -75.18026271293837, lat: 39.950329748453754 },
+      position: { lng: -75.17557240090707, lat: 39.94474783556768 },
       region_id: 'center-west',
       region: 'Center City & West Philadelphia',
       zoom: 11.5,
    },
    {
-      position: { lng: -75.16394864511551, lat: 40.00248519841409 },
+      position: { lng: -75.14876308929126, lat: 40.01112280321871 },
       region_id: 'north',
       region: 'North Philadelphia',
       zoom: 11.5,
@@ -17,12 +17,12 @@ const showcase = [
       region: 'Far Northeast',
       zoom: 12,
    },
-   {
-      position: { lng: -75.18652953556779, lat: 39.995678480278286 },
-      region_id: 'all',
-      region: 'City Wide',
-      zoom: 10.4,
-   },
+   // {
+   //    position: { lng: -75.18652953556779, lat: 39.995678480278286 },
+   //    region_id: 'all',
+   //    region: 'City Wide',
+   //    zoom: 10.4,
+   // },
 ];
 mapboxgl.accessToken =
    'pk.eyJ1IjoiYmFiYnMiLCJhIjoiY2s1b2JoMjZvMGYydzNmbXAxMXp1NWZhZyJ9.LEHmtAFLAij67eF-54FjxA';
@@ -67,19 +67,20 @@ const map = new mapboxgl.Map({
    let i = 0;
    const duration = 30000 / 4;
    // flyTo(showcase[3], 3);
-   flyTo(showcase[i], i);
+   flyTo(i);
    const interval = setInterval(() => {
       i++;
       if (i >= showcase.length) {
          i = 0;
          clearInterval(interval);
       } else {
-         flyTo(showcase[i], i);
+         flyTo(i);
       }
       // console.log(i);
    }, duration);
 
-   function flyTo({ position, region_id, region, zoom }, i) {
+   function flyTo(i) {
+      const { position, region_id, region, zoom } = showcase[i];
       const nodes = [...document.querySelectorAll('.marker-container')];
       nodes.forEach((d) => {
          d.style.opacity = 0;
@@ -96,13 +97,19 @@ const map = new mapboxgl.Map({
 
          // lol:
 
-         setTimeout(() => {
-            document.getElementById('julia').style.top = -59 + -18 + 'px';
-            document.getElementById('rox').style.top = -59 + -18 + 'px';
+         // setTimeout(() => {
+         //    document.getElementById('julia').style.top = -59 + -18 + 'px';
 
-            document.getElementById('overbrook').style.left = -264 + -18 + 'px';
-            document.getElementById('george').style.left = -264 + -18 + 'px';
-         }, 1000);
+         //    document.getElementById('rox').style.top = -59 + -18 + 'px';
+         //    document.getElementById('rox').style.left = -264 + -18 + 'px';
+
+         //    document.getElementById('overbrook').style.left = -264 + -18 + 'px';
+         //    document.getElementById('overbrook').style.top = -59 + -18 + 'px';
+
+         //    document.getElementById('george').style.left = -264 + -18 + 'px';
+
+         //    document.getElementById('tilden').style.left = -264 + -18 + 'px';
+         // }, 1000);
       }
       setTimeout(() => {
          nodes
